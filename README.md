@@ -1,5 +1,5 @@
-# PySword
-# A simple Python Password Generator  
+## PySword
+### A simple Python Password Generator  
 
 ### Usage
 
