@@ -4,12 +4,11 @@ import random, string, argparse, sys
 
 parser = argparse.ArgumentParser()
 parser = argparse.ArgumentParser(description='Python Password Generator')
-parser.add_argument('length', type=int, help='The length of the Password')
 
 parser.add_argument('-n', '--number', action="store_true", help='Generate only Numbers')
 parser.add_argument('-a', '--alpha', action="store_true", help='Generate only alphabetical characters')
 parser.add_argument('-s', '--symbol', action="store_true", help='Generate only symbols')
-
+parser.add_argument('length', type=int, help='The length of the Password')
 
 args = parser.parse_args()
 
@@ -17,9 +16,6 @@ length = args.length
 options = ['-nsa', '-nas', '-sna', '-san', '-asn', '-ans']
 
 for i in range(length):
-
-    if len(sys.argv) < 2 and len(sys.argv) > 3:
-        exit()
 
     if '-n' in sys.argv or '--number'in sys.argv:
         num = string.digits
