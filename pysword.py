@@ -12,6 +12,7 @@ parser.add_argument('length', type=int, help='The length of the Password')
 
 args = parser.parse_args()
 
+
 length = args.length
 options = ['-nsa', '-nas', '-sna', '-san', '-asn', '-ans']
 
